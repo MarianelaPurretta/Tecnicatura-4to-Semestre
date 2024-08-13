@@ -1,7 +1,7 @@
 import logging as log
 
 #https://docs.python.org/3/howto/logging.html
-log.basicConfig(level=log.DEBUG, #asctime: fecha y hora| levelname: nivel| filename: nombre del archivo| message: mensaje
+log.basicConfig(level=log.INFO, #asctime: fecha y hora| levelname: nivel| filename: nombre del archivo| message: mensaje
                 format='%(asctime)s:%(levelname)s [%(filename)s:%(lineno)s] %(message)s',
                 #date format: I:hora, M:min, S:seg, %p->PM, %a->AM
                 datefmt='%I:%M:%S %p',

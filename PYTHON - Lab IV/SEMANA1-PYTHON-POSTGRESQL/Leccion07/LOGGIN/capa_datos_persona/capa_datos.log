@@ -619,3 +619,80 @@
             Apellido: Torres, 
             Email: mtorres@email.com
         
+11:45:06 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+11:45:06 PM:DEBUG [conexion.py:35] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000166EEA275F0>
+11:45:06 PM:DEBUG [conexion.py:20] Conexion obtenida del pool: <connection object at 0x00000166EE9BE130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:45:06 PM:DEBUG [usuario_dao.py:19] Seleccinando usuarios
+11:45:06 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+11:45:06 PM:DEBUG [cursor_del_pool.py:19] Ocurrio una excepcion: syntax error at or near "BY"
+LINE 1: SELECT * FROM usuario ORDEY BY id_usuario
+                                    ^
+
+11:45:06 PM:DEBUG [conexion.py:46] Regresamos la conexio0n del pool: <connection object at 0x00000166EE9BE130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:45:55 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+11:45:55 PM:DEBUG [conexion.py:35] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001272B7D2EA0>
+11:45:55 PM:DEBUG [conexion.py:20] Conexion obtenida del pool: <connection object at 0x000001272B766130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:45:55 PM:DEBUG [usuario_dao.py:19] Seleccinando usuarios
+11:45:55 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+11:45:55 PM:DEBUG [cursor_del_pool.py:19] Ocurrio una excepcion: type object 'UsuarioDAO' has no attribute '_SELECCIONAR'
+11:45:55 PM:DEBUG [conexion.py:46] Regresamos la conexio0n del pool: <connection object at 0x000001272B766130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:47:42 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+11:47:42 PM:DEBUG [conexion.py:35] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000021A686ED4C0>
+11:47:42 PM:DEBUG [conexion.py:20] Conexion obtenida del pool: <connection object at 0x0000021A6A266130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:47:42 PM:DEBUG [usuario_dao.py:19] Seleccinando usuarios
+11:47:42 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+11:47:42 PM:DEBUG [cursor_del_pool.py:19] Ocurrio una excepcion: syntax error at or near "BY"
+LINE 1: SELECT * FROM usuario ORDEY BY id_usuario
+                                    ^
+
+11:47:42 PM:DEBUG [conexion.py:46] Regresamos la conexio0n del pool: <connection object at 0x0000021A6A266130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:48:50 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+11:48:50 PM:DEBUG [conexion.py:35] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001C07EC6D4C0>
+11:48:50 PM:DEBUG [conexion.py:20] Conexion obtenida del pool: <connection object at 0x000001C07F3B6130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:48:50 PM:DEBUG [usuario_dao.py:19] Seleccinando usuarios
+11:48:50 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+11:48:50 PM:DEBUG [cursor_del_pool.py:19] Ocurrio una excepcion: syntax error at or near "BY"
+LINE 1: SELECT * FROM usuario ORDEY BY id_usuario
+                                    ^
+
+11:48:50 PM:DEBUG [conexion.py:46] Regresamos la conexio0n del pool: <connection object at 0x000001C07F3B6130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:51:06 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+11:51:06 PM:DEBUG [conexion.py:35] Creacion del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000017D6DF5D4C0>
+11:51:06 PM:DEBUG [conexion.py:20] Conexion obtenida del pool: <connection object at 0x0000017D6FB16130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:51:06 PM:DEBUG [usuario_dao.py:19] Seleccinando usuarios
+11:51:06 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+11:51:06 PM:DEBUG [cursor_del_pool.py:22] Commit de la transaccion
+11:51:06 PM:DEBUG [conexion.py:46] Regresamos la conexio0n del pool: <connection object at 0x0000017D6FB16130; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:51:06 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+11:51:06 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+11:52:19 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion, Hasta pont1o!!
+11:53:47 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+11:53:47 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+11:54:29 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+11:54:29 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+11:54:32 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion, Hasta pronto!!
+11:54:43 PM:INFO [menu_app_usuario.py:16] Usuario: 1 jperez 123
+11:54:43 PM:INFO [menu_app_usuario.py:16] Usuario: 2 kgomez 456
+11:54:49 PM:INFO [menu_app_usuario.py:19] Salimos de la aplicacion, Hasta pronto!!
+12:09:42 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+12:09:42 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+12:10:08 AM:INFO [menu_app_usuario.py:24] Usuario insertado: 1
+12:10:14 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+12:10:14 AM:INFO [menu_app_usuario.py:17] Usuario: 2 kgomez 456
+12:10:14 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+12:10:57 AM:INFO [menu_app_usuario.py:32] Usuario actualizado: 1
+12:11:11 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+12:11:11 AM:INFO [menu_app_usuario.py:17] Usuario: 2 karlagomez 456
+12:11:11 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+12:11:49 AM:INFO [menu_app_usuario.py:38] Usuario eliminado: 0
+12:11:53 AM:INFO [menu_app_usuario.py:17] Usuario: 1 jperez 123
+12:11:53 AM:INFO [menu_app_usuario.py:17] Usuario: 2 karlagomez 456
+12:11:53 AM:INFO [menu_app_usuario.py:17] Usuario: 3 mlara 567
+12:12:20 AM:INFO [menu_app_usuario.py:41] Salimos de la aplicacion, Hasta pronto!!
+12:15:10 AM:INFO [menu_app_usuario.py:24] Usuario: 1 jperez 123
+12:15:10 AM:INFO [menu_app_usuario.py:24] Usuario: 2 karlagomez 456
+12:15:10 AM:INFO [menu_app_usuario.py:24] Usuario: 3 mlara 567
+12:15:14 AM:ERROR [menu_app_usuario.py:65] Opción no válida. Por favor, elige una opción entre 1 y 5.
+12:15:20 AM:ERROR [menu_app_usuario.py:17] Error: Debes ingresar un número válido. invalid literal for int() with base 10: 't'
+12:15:25 AM:ERROR [menu_app_usuario.py:65] Opción no válida. Por favor, elige una opción entre 1 y 5.
+12:15:30 AM:INFO [menu_app_usuario.py:63] Salimos de la aplicación. ¡Hasta pronto!
