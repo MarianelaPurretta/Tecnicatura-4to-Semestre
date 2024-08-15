@@ -129,15 +129,46 @@ public class EstudianteDAO {
         return false;
     }//Fin metodo modificarEstudiante
 
+    public boolean eliminarEstudiante(Estudiante estudiante){
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String sql = "DELETE FROM estudiantes2024 WHERE idestudiantes2024=?";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, estudiante.getIdEstudiante());
+            ps.execute();
+            return true;
+        } catch(Exception e){
+            System.out.println("Error al eliminar estudiante: " + e.getMessage());
+        }
+        finally {
+            try{
+                con.close();
+            } catch (Exception e){
+                System.out.println("Error al cerrar la conexion: " + e.getMessage());
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
         var estudianteDao = new EstudianteDAO();
         //Modificar estudiante
-        var estudianteModificado = new Estudiante("Juan Carlos","Pepes", "65437868754378", "noteentiendonadajuancarlo@gmail.com");
-        var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
-        if(modificado)
-            System.out.println("Estudiante modificado: "+estudianteModificado);
-        else
-            System.out.println("No se modifico el estudiante: "+estudianteModificado);
+        //var estudianteModificado = new Estudiante("Juan Carlos","Pepes", "65437868754378", "noteentiendonadajuancarlo@gmail.com");
+        //var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
+        //if(modificado)
+        //    System.out.println("Estudiante modificado: "+estudianteModificado);
+        //else
+        //    System.out.println("No se modifico el estudiante: "+estudianteModificado);
+
+
+        //Eliminar estudiantes:
+        //var estudianteEliminar = new Estudiante(4);
+        //var eliminado = estudianteDao.eliminarEstudiante(estudianteEliminar);
+        //if(eliminado)
+        //    System.out.println("Estudiante eliminado: " + estudianteEliminar);
+        //else
+        //    System.out.println("No se elimino el estudiante: " + estudianteEliminar);
 
 
         //Listar los estudiantes: prueba
@@ -145,13 +176,14 @@ public class EstudianteDAO {
         List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
         estudiantes.forEach(System.out::println); //func lambda para imprimir
 
+
         //Agregar estudiante
-        //var nuevoEstudiante = new Estudiante("Carlos","Lara","6545645","CarlosElpepe@gmail.com");
-        //var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
-        //if(agregado)
-        //   System.out.println("Estudiante agregado: "+nuevoEstudiante);
-        //else
-        //System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
+        var nuevoEstudiante = new Estudiante("Carlos","Lara","6545645","CarlosElpepe@gmail.com");
+        var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
+        if(agregado)
+           System.out.println("Estudiante agregado: "+nuevoEstudiante);
+        else
+            System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
 
         //Buscar por id
         //var estudiante1 = new Estudiante(1);
