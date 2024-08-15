@@ -249,38 +249,3 @@ public class EstudianteDAO {
 }
 
 
-        //Eliminar estudiantes:
-        //var estudianteEliminar = new Estudiante(4);
-        //var eliminado = estudianteDao.eliminarEstudiante(estudianteEliminar);
-        //if(eliminado)
-        //    System.out.println("Estudiante eliminado: " + estudianteEliminar);
-        //else
-        //    System.out.println("No se elimino el estudiante: " + estudianteEliminar);
-
-
-        //Listar los estudiantes: prueba
-        System.out.println("Listado de estudiantes: ");
-        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
-        estudiantes.forEach(System.out::println); //func lambda para imprimir
-
-
-        //Agregar estudiante
-        var nuevoEstudiante = new Estudiante("Carlos","Lara","6545645","CarlosElpepe@gmail.com");
-        var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
-        if(agregado)
-           System.out.println("Estudiante agregado: "+nuevoEstudiante);
-        else
-            System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
-
-        //Buscar por id
-        //var estudiante1 = new Estudiante(1);
-        //System.out.println("Estudiantes antes de la bisqueda: " + estudiante1);
-        //var encontrado = estudianteDao.buscarEstudiantePorId(estudiante1);
-        //if (encontrado)
-         //   System.out.println("Estudiante encontrado: " + estudiante1);
-        //else
-        //   System.out.println("No se encontro el estudiante:  "+ estudiante1.getIdEstudiante());
-
-    }
-}
-
