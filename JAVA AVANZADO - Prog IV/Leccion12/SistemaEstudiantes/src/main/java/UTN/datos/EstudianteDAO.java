@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class EstudianteDAO {
     //metodo listar:
@@ -152,14 +153,100 @@ public class EstudianteDAO {
     }
 
     public static void main(String[] args) {
-        var estudianteDao = new EstudianteDAO();
-        //Modificar estudiante
-        //var estudianteModificado = new Estudiante("Juan Carlos","Pepes", "65437868754378", "noteentiendonadajuancarlo@gmail.com");
-        //var modificado = estudianteDao.modificarEstudiante(estudianteModificado);
-        //if(modificado)
-        //    System.out.println("Estudiante modificado: "+estudianteModificado);
-        //else
-        //    System.out.println("No se modifico el estudiante: "+estudianteModificado);
+        Scanner scanner = new Scanner(System.in); //Leo opciones y datos ingresados
+        EstudianteDAO estudianteDao = new EstudianteDAO();
+        int opcion;
+        //ciclo para repetir hasta opcion 6
+        do {
+            System.out.println("\n*** Sistema de Estudiantes ***");
+            System.out.println("1. Listar estudiantes");
+            System.out.println("2. Buscar estudiante");
+            System.out.println("3. Agregar estudiante");
+            System.out.println("4. Modificar estudiante");
+            System.out.println("5. Eliminar estudiante");
+            System.out.println("6. Salir");
+            System.out.print("Elige una opción: ");
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Listado de estudiantes: ");
+                    List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+                    estudiantes.forEach(System.out::println);
+                    break;
+
+                case 2:
+                    System.out.print("Ingresa el ID del estudiante a buscar: ");
+                    int idBuscar = scanner.nextInt();
+                    Estudiante estudianteBuscar = new Estudiante();
+                    estudianteBuscar.setIdEstudiante(idBuscar);
+                    if (estudianteDao.buscarEstudiantePorId(estudianteBuscar)) {
+                        System.out.println("Estudiante encontrado: " + estudianteBuscar);
+                    } else {
+                        System.out.println("No se encontró el estudiante con ID: " + idBuscar);
+                    }
+                    break;
+
+                case 3:
+                    System.out.print("Ingresa el nombre del estudiante: ");
+                    String nombre = scanner.next();
+                    System.out.print("Ingresa el apellido del estudiante: ");
+                    String apellido = scanner.next();
+                    System.out.print("Ingresa el teléfono del estudiante: ");
+                    String telefono = scanner.next();
+                    System.out.print("Ingresa el email del estudiante: ");
+                    String email = scanner.next();
+                    Estudiante nuevoEstudiante = new Estudiante(nombre, apellido, telefono, email);
+                    if (estudianteDao.agregarEstudiante(nuevoEstudiante)) {
+                        System.out.println("Estudiante agregado: " + nuevoEstudiante);
+                    } else {
+                        System.out.println("No se ha agregado el estudiante.");
+                    }
+                    break;
+
+                case 4:
+                    System.out.print("Ingresa el ID del estudiante a modificar: ");
+                    int idModificar = scanner.nextInt();
+                    Estudiante estudianteModificar = new Estudiante();
+                    estudianteModificar.setIdEstudiante(idModificar);
+                    if (estudianteDao.buscarEstudiantePorId(estudianteModificar)) {
+                        System.out.print("Ingresa el nuevo nombre: ");
+                        estudianteModificar.setNombre(scanner.next());
+                        System.out.print("Ingresa el nuevo apellido: ");
+                        estudianteModificar.setApellido(scanner.next());
+                        System.out.print("Ingresa el nuevo teléfono: ");
+                        estudianteModificar.setTelefono(scanner.next());
+                        System.out.print("Ingresa el nuevo email: ");
+                        estudianteModificar.setEmail(scanner.next());
+                        if (estudianteDao.modificarEstudiante(estudianteModificar)) {
+                            System.out.println("Estudiante modificado: " + estudianteModificar);
+                        } else {
+                            System.out.println("No se ha podido modificar el estudiante.");
+                        }
+                    } else {
+                        System.out.println("No se encontró el estudiante con ID: " + idModificar);
+                    }
+                    break;
+                case 5:
+                    System.out.print("Ingresa el ID del estudiante a eliminar: ");
+                    int idEliminar = scanner.nextInt();
+                    Estudiante estudianteEliminar = new Estudiante();
+                    estudianteEliminar.setIdEstudiante(idEliminar);
+                    if (estudianteDao.eliminarEstudiante(estudianteEliminar)) {
+                        System.out.println("Estudiante eliminado: " + estudianteEliminar);
+                    } else {
+                        System.out.println("No se ha podido eliminar el estudiante.");
+                    }
+                    break;
+                case 6:
+                    System.out.println("Saliendo del sistema...");
+                    break;
+                default:
+                    System.out.println("Opción no válida, intenta de nuevo.");
+            }
+        } while (opcion != 6);
+    }
+}
 
 
         //Eliminar estudiantes:
