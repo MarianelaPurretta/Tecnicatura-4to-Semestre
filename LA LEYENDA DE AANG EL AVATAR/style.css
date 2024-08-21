@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado principal */
+h1 {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Sección de inicio */
+#inicio {
+    margin: 20px;
+}
+
+#boton-jugar, #boton-reglas {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-jugar:hover, #boton-reglas:hover {
+    background-color: #0056b3;
+}
+
+/* Sección de reglas del juego */
+#reglas-del-juego {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para mayor énfasis */
+    border: 2px solid #007BFF; /* Borde azul para resaltar la sección */
+}
+
+#reglas-del-juego h4 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; /* Transformación a mayúsculas para mayor impacto */
+}
+
+#reglas-del-juego p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Color gris suave para facilitar la lectura */
+    margin-bottom: 10px;
+    text-align: justify; /* Justificar el texto para una apariencia más profesional */
+}
+
+#reglas-del-juego ul {
+    list-style-type: square; /* Lista con viñetas cuadradas */
+    margin-left: 20px;
+    color: #007BFF; /* Color de las viñetas en azul para hacer juego con el borde */
+}
+
+#reglas-del-juego ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#reglas-del-juego ul li::marker {
+    color: #333; /* Color de marcador */
+    font-size: 14px;
+}
+
+#reglas-del-juego strong {
+    color: #007BFF; /* Resaltar palabras clave en azul */
+}
+
+h4 {
+    margin-top: 0;
+}
+
+/* Sección de selección de personajes */
+#seleccionar-personaje {
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#boton-personaje {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-personaje:hover {
+    background-color: #218838;
+}
+
+/* Sección de selección de ataques */
+#seleccionar-ataque {
+    margin: 20px;
+}
+
+#seleccionar-ataque p {
+    font-size: 18px;
+}
+
+#boton-punio, #boton-patada, #boton-barrida {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #8f6d07;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-punio:hover, #boton-patada:hover, #boton-barrida:hover {
+    background-color: #e0a800;
+}
+
+/* Sección de mensajes */
+#mensajes {
+    margin: 20px;
+    font-size: 18px;
+    color: #2b1c1c;
+}
+
+/* Sección de reinicio */
+#reiniciar {
+    margin: 20px;
+}
+
+#boton-reiniciar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-reiniciar:hover {
+    background-color: #c82333;
+}
+
+/* Cambios de fondo según el personaje */
+body.zuko {
+    background-color: #ff4d4d; /* Rojo fuego */
+}
+
+body.katara {
+    background-color: #4da6ff; /* Azul agua */
+}
+
+body.aang {
+    background-color: #f0f8ff; /* Blanco con un toque de azul aire */
+}
+
+body.toph {
+    background-color: #d2b48c; /* Marrón tierra */
+}
