@@ -9,3 +9,16 @@ productos.forEach((product) => {
     `;
     shopContent.append(content);
 });
+
+const buyButton = document.createElement("button");
+buyButton.innerText = "Comparar";
+
+content.append(buyButton);
+buyButton.addEventListener("click", () => {
+    cart.push({
+        id: product.id,
+        productName: product.productName,
+        price: product.price,
+        quanty: 1
+    })
+})
