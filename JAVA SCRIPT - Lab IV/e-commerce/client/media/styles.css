@@ -86,6 +86,17 @@
 
 }
 
+.modal-container .product-img {
+    width: 100px;
+    /* Ajusta el tamaño según tu preferencia */
+    height: auto;
+    /* Mantén la proporción de la imagen */
+    object-fit: cover;
+    /* Evita que las imágenes se deformen */
+    margin-right: 10px;
+    /* Añade espacio entre la imagen y el contenido de texto */
+}
+
 .modal-container::-webkit-scrollbar {
     display: none;
 }

@@ -26,6 +26,7 @@ productos.forEach((product) => {
             quanty: product.quanty,
             img: product.img,
         });
-        console.log(cart);
+        console.log(cart); // Verifica si los productos se están agregando
     });
+
 });
