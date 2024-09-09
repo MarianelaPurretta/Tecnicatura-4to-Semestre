@@ -1,31 +1,44 @@
 const productos = [
     {
         id: 1,
-        productName: "Banana",
-        price: 480,
+        productName: "Manzana",
+        price: 3500,
         quanty: 1,
-        img: "/client/media/banana.jpg",
+        img: "/client/media/assets/manzana.jpg",
     },
     {
         id: 2,
-        productName: "Leche",
-        price: 950,
+        productName: "Arándano",
+        price: 3200,
         quanty: 1,
-        img: "/client/media/leche.jpg",
+        img: "/client/media/assets/arandano.jpg",
     },
     {
         id: 3,
-        productName: "Pollo",
-        price: 950,
+        productName: "Cereza",
+        price: 3800,
         quanty: 1,
-        img: "/client/media/pollo.jpg",
+        img: "/client/media/assets/cereza.jpg",
     },
     {
         id: 4,
-        productName: "Mayonesa",
-        price: 510,
+        productName: "Banana",
+        price: 4500,
         quanty: 1,
-        img: "/client/media/mayonesa.jpg",
+        img: "/client/media/assets/banana.jpg",
     },
-
+    {
+        id: 5,
+        productName: "Naranja",
+        price: 2500,
+        quanty: 1,
+        img: "/client/media/assets/naranja.jpg",
+    },
+    {
+        id: 6,
+        productName: "Frutilla",
+        price: 4200,
+        quanty: 1,
+        img: "/client/media/assets/frutilla.jpg",
+    }
 ];
