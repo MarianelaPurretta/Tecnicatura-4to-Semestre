@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(29, 39, 43);
+}
+
 .card-products-container {
     margin: 5px;
 }
@@ -14,7 +18,8 @@
     margin-top: 40px;
     width: 200px;
     height: 200px;
-    ;
+    border-radius: 30px;
+
 }
 
 .card-products button {
@@ -52,6 +57,21 @@
 .cart-btn:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+.cart-counter {
+    /*display: none;*/
+    position: fixed;
+    top: 89vh;
+    right: 27px;
+    color: #f0f0f0;
+    text-align: center;
+    background-color: #457826;
+    padding: 4px;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    font-size: 15px;
 }
 
 /*modal*/
