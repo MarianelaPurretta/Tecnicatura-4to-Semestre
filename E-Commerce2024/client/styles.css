@@ -906,39 +906,65 @@ footer {
     opacity: 0.7;
 }
 
+/* Estilos del botón flotante del carrito */
 .cart-btn {
     position: fixed;
-    top: 90vh;
-    right: 40px;
-    background-color: rgb(25, 25, 25);
-    padding: 10px;
-    border-radius: 50%;
-    height: 24px;
-    width: 24px;
-    transition: transform 0.2s ease-in-out;
+    bottom: 20px; /* Ajusta para que esté en la esquina inferior derecha */
+    right: 20px;
+    background-color: var(--primary-color); /* Color de fondo */
+    color: white; /* Color del icono */
+    padding: 15px; /* Espacio alrededor del ícono */
+    border-radius: 50%; /* Botón circular */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+    transition: background-color 0.3s ease;
 }
-
+.cart-btn i{
+    font-size: 1.8rem; /* Tamaño del icono */
+}
 .cart-btn:hover {
     cursor: pointer;
     opacity: 0.9;
+    background-color: var(--secondary-color); /* Cambia el color al hacer hover */
 }
 
+.cart-btn i {
+    font-size: 1.8rem; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+}
+
+/* Estilos del contador */
 .cart-counter {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 89vh;
-    right: 27px;
+    bottom: 65px; /* Posicionado justo encima del botón del carrito */
+    right: 35px; /* Ajusta la posición para que quede alineado */
     color: #ffffff;
-    text-align: center;
-    background-color: #ed3434;
+    background-color: #ed3434; /* Color de fondo del contador */
     padding: 4px;
-    border-radius: 50%;
-    height: 17px;
-    width: 17px;
-    font-size: 15px;
+    border-radius: 50%; /* Contador circular */
+    height: 22px; /* Tamaño del contador */
+    width: 22px;
+    font-size: 12px; /* Tamaño del texto dentro del contador */
+    font-weight: bold;
+    z-index: 10000; /* Asegura que esté encima del botón */
+    text-align: center;
 }
 
-/*modal*/
+/* Efecto de clic en el botón */
+.cart-btn:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+}
+
+/* Modal Overlay */
 .modal-overlay {
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
@@ -947,42 +973,59 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 100;
 }
 
+/* Modal Container */
 .modal-container {
     display: none;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 6px #00000029;
+    background-color: var(--white-color);
+    box-shadow: 0px 3px 6px var(--dark-color);
     padding: 40px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 101;
+    max-width: 95%; /* Más ancho */
+    width: 600px; /* Ancho ajustado */
+    border: 3px solid var(--primary-color); /* Borde agregado */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Ocultar barra de scroll */
 .modal-container::-webkit-scrollbar {
     display: none;
 }
 
+/* Botón de cerrar */
 .modal-close {
     float: right;
     cursor: pointer;
+    color: var(--primary-color);
 }
 
+.modal-close:hover {
+    color: var(--secondary-color);
+}
+
+/* Título del modal */
 .modal-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color: var(--primary-color);
 }
 
-/* modal-body*/
+/* Cuerpo del modal */
 .modal-body {
     margin-bottom: 20px;
     text-align: center;
+    color: var(--dark-color);
 }
 
+/* Estilos de producto */
 .product {
     display: flex;
     align-items: center;
@@ -1005,6 +1048,7 @@ footer {
     margin-top: 34px;
 }
 
+/* Cantidad */
 .quantity {
     display: flex;
     align-items: center;
@@ -1015,7 +1059,7 @@ footer {
 
 .quantity-btn-decrese,
 .quantity-btn-increse {
-    color: #457826;
+    color: var(--secondary-color);
     cursor: pointer;
     font-size: 16px;
     width: 28px;
@@ -1023,7 +1067,7 @@ footer {
 }
 
 .quantity-imput {
-    color: #457826;
+    color: var(--primary-color);
     font-size: 16px;
     padding: 10 10px;
     text-align: center;
@@ -1031,7 +1075,8 @@ footer {
     font-weight: bold;
 }
 
-@media only screen and(max-width: 500px) {
+/* Responsive adjustments */
+@media only screen and (max-width: 500px) {
     .product-img {
         display: none;
     }
@@ -1042,25 +1087,36 @@ footer {
     }
 }
 
+/* Precio */
 .price {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
+    color: var(--primary-color);
 }
 
+/* Eliminar producto */
 .delete-product {
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
+    color: var(--dark-color);
 }
 
+.delete-product:hover {
+    color: var(--secondary-color);
+}
+
+/* Pie del modal */
 .modal-footer {
     text-align: center;
+    margin-top: 20px;
 }
 
 .total-price {
     font-size: 20px;
     font-weight: bold;
+    color: var(--primary-color);
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -1085,3 +1141,5 @@ footer {
 #button-cherckout{
     z-index: 10;
 }
+
+
