@@ -101,7 +101,7 @@ nav ul li a {
     font-weight: 500;
     color: var(--white-color);
     border-radius: 30px;
-    transition: all 0.2s ease;
+    
 }
 
 nav ul li a:hover {
@@ -127,21 +127,6 @@ label .close_btn {
 }
 
 /* Hero Section */
-.hero_section {
-    min-height: 100vh;
-    width: 100%;
-    max-width: 100vw;
-    /* Evita que la imagen exceda el ancho de la ventana */
-    margin: 0 auto;
-    /* Centra el contenedor en la pantalla */
-    background-image: url('assets/images/banner.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: hidden;
-    /* Asegura que el contenido no desborde los límites del contenedor */
-}
 
 .hero_section {
     min-height: 100vh;
@@ -160,6 +145,7 @@ label .close_btn {
 .hero_container {
     display: flex;
     background-color: #02020249;
+    backdrop-filter: blur(2px);
     gap: 20px;
     padding: 20px;
     align-items: center;
@@ -174,7 +160,7 @@ label .close_btn {
     /* Coloca el contenedor sobre la imagen */
     top: 180px;
     /* Lleva el contenido al tope del contenedor */
-    left: 60px;
+    left: 10px;
     margin-left: 0%;
     right: 0;
     z-index: 1;
@@ -909,34 +895,49 @@ footer {
 /* Estilos del botón flotante del carrito */
 .cart-btn {
     position: fixed;
-    bottom: 20px; /* Ajusta para que esté en la esquina inferior derecha */
+    bottom: 20px;
+    /* Ajusta para que esté en la esquina inferior derecha */
     right: 20px;
-    background-color: var(--primary-color); /* Color de fondo */
-    color: white; /* Color del icono */
-    padding: 15px; /* Espacio alrededor del ícono */
-    border-radius: 50%; /* Botón circular */
-    width: 60px; /* Ancho del botón */
-    height: 60px; /* Alto del botón */
+    background-color: var(--primary-color);
+    /* Color de fondo */
+    color: white;
+    /* Color del icono */
+    padding: 15px;
+    /* Espacio alrededor del ícono */
+    border-radius: 50%;
+    /* Botón circular */
+    width: 60px;
+    /* Ancho del botón */
+    height: 60px;
+    /* Alto del botón */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.2s ease-in-out, background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    z-index: 9999; /* Asegura que esté encima de otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    z-index: 9999;
+    /* Asegura que esté encima de otros elementos */
     transition: background-color 0.3s ease;
-}
-.cart-btn i{
-    font-size: 1.8rem; /* Tamaño del icono */
-}
-.cart-btn:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    background-color: var(--secondary-color); /* Cambia el color al hacer hover */
 }
 
 .cart-btn i {
-    font-size: 1.8rem; /* Tamaño del ícono */
-    color: white; /* Color del ícono */
+    font-size: 1.8rem;
+    /* Tamaño del icono */
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    /* Cambia el color al hacer hover */
+}
+
+.cart-btn i {
+    font-size: 1.8rem;
+    /* Tamaño del ícono */
+    color: white;
+    /* Color del ícono */
 }
 
 /* Estilos del contador */
@@ -945,29 +946,37 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 65px; /* Posicionado justo encima del botón del carrito */
-    right: 35px; /* Ajusta la posición para que quede alineado */
+    bottom: 65px;
+    /* Posicionado justo encima del botón del carrito */
+    right: 35px;
+    /* Ajusta la posición para que quede alineado */
     color: #ffffff;
-    background-color: #ed3434; /* Color de fondo del contador */
+    background-color: #ed3434;
+    /* Color de fondo del contador */
     padding: 4px;
-    border-radius: 50%; /* Contador circular */
-    height: 22px; /* Tamaño del contador */
+    border-radius: 50%;
+    /* Contador circular */
+    height: 22px;
+    /* Tamaño del contador */
     width: 22px;
-    font-size: 12px; /* Tamaño del texto dentro del contador */
+    font-size: 12px;
+    /* Tamaño del texto dentro del contador */
     font-weight: bold;
-    z-index: 10000; /* Asegura que esté encima del botón */
+    z-index: 10000;
+    /* Asegura que esté encima del botón */
     text-align: center;
 }
 
 /* Efecto de clic en el botón */
 .cart-btn:active {
-    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+    transform: scale(0.95);
+    /* Efecto de reducción al hacer clic */
 }
 
 /* Modal Overlay */
 .modal-overlay {
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.726);
     position: fixed;
     top: 0;
     left: 0;
@@ -979,7 +988,7 @@ footer {
 /* Modal Container */
 .modal-container {
     display: none;
-    background-color: var(--white-color);
+    background-color: rgba(15, 15, 15, 0.87);
     box-shadow: 0px 3px 6px var(--dark-color);
     padding: 40px;
     position: fixed;
@@ -987,10 +996,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 101;
-    max-width: 95%; /* Más ancho */
-    width: 600px; /* Ancho ajustado */
-    border: 3px solid var(--primary-color); /* Borde agregado */
-    border-radius: 10px; /* Bordes redondeados */
+    max-width: 95%;
+    width: 600px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    /* Desenfoque del fondo */
 }
 
 /* Ocultar barra de scroll */
@@ -1012,17 +1022,18 @@ footer {
 /* Título del modal */
 .modal-title {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Cuerpo del modal */
 .modal-body {
     margin-bottom: 20px;
     text-align: center;
-    color: var(--dark-color);
+    color: var(--light-gray-color);
+
 }
 
 /* Estilos de producto */
@@ -1042,10 +1053,14 @@ footer {
 .product-info {
     flex: 1;
     text-align: left;
+
+
+
 }
 
 .product-info h4 {
     margin-top: 34px;
+    font-weight: 300;
 }
 
 /* Cantidad */
@@ -1063,11 +1078,11 @@ footer {
     cursor: pointer;
     font-size: 16px;
     width: 28px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .quantity-imput {
-    color: var(--primary-color);
+    color: var(--light-gray-color);
     font-size: 16px;
     padding: 10 10px;
     text-align: center;
@@ -1092,7 +1107,7 @@ footer {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 /* Eliminar producto */
@@ -1114,32 +1129,32 @@ footer {
 }
 
 .total-price {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px 16px;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
     cursor: pointer;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
 }
 
-.btn-primary:hover{
-    background-color: #0069d9;
-    border-color: #0069d9;
+.btn-primary:hover {
+    color: var(--secondary-color);
+    background: transparent;
+    border-color: var(--secondary-color);
 }
 
-#button-cherckout{
+#button-cherckout {
     z-index: 10;
 }
-
-
