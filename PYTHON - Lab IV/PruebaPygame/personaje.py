@@ -1,6 +1,6 @@
 import pygame
 
-pygame.init()
+
 
 #config de pantalla
 screen = pygame.display.set_mode((800, 600))
@@ -23,15 +23,14 @@ while running:
     #Detectar las teclas para presionar:
     keys = pygame.key.get_pressed()
 
-    # Movimiento del jugador
-    if keys[pygame.K_LEFT]:  #FLECHA IZQUIERDA
-        player_pos.x -= player_speed
-    if keys[pygame.K_RIGHT]: #FLECHA DERECHA
-        player_pos.y += player_speed
-    if keys[pygame.K_DOWN]: #FLECHA ABAJO
-        player_pos.y -= player_speed
-    if keys[pygame.K_UP]: #FLECHA ARRIBA
-        player_pos.x += player_speed
+    if keys[pygame.K_LEFT]:  # FLECHA IZQUIERDA
+        player_pos.x -= player_speed  # Mueve hacia la izquierda (disminuye X)
+    if keys[pygame.K_RIGHT]:  # FLECHA DERECHA
+        player_pos.x += player_speed  # Mueve hacia la derecha (aumenta X)
+    if keys[pygame.K_DOWN]:  # FLECHA ABAJO
+        player_pos.y += player_speed  # Mueve hacia abajo (aumenta Y)
+    if keys[pygame.K_UP]:  # FLECHA ARRIBA
+        player_pos.y -= player_speed  # Mueve hacia arriba (disminuye Y)
 
     #Limpiar pantalla
     screen.fill('green')
