@@ -5,64 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b67b39e-a42a-43e7-8e7d-282861581096" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/ToDo_Front_-_API.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/Back.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/TodoAppApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/context/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/context/OpenApiConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/controller/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/exceptions/ExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/exceptions/ToDoExceptions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/model/dto/request/TaskRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/model/dto/response/TaskResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/model/entity/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/model/mapper/TaskMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/repository/TastkRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/service/ITaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Back/ToDo API/src/main/java/ar/com/utnfrsr/todoapp/service/impl/TaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/img/rocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/img/utn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/components/addTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/components/checkComplete.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/components/dateElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/components/deleteIco.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/components/displayTasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/data/checkTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/data/deleteTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/data/getTasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/data/path.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/data/sendTask.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/assets/script/service/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Front/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/Tasks.postman_collection.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Matias Carballo/ToDo_Front_-_API/db_todo_api.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +68,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <envs>
-        <env name="DB_PASS" value="password,DB_USER=user" />
+        <env name="DB_PASS" value="123456,DB_USER=root" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="ar.com.utnfrsr.todoapp.TodoAppApplication" />
       <module name="todoapp" />
